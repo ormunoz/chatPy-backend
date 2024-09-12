@@ -1,0 +1,200 @@
+{
+  "intents": [
+    {
+      "tag": "saludo",
+      "patterns": [
+        "Hola",
+        "¿Qué tal?",
+        "Buenos días",
+        "Hola, ¿cómo estás?",
+        "Hey"
+      ],
+      "responses": [
+        "¡Hola! ¿En qué puedo ayudarte hoy?",
+        "¡Buenos días! ¿Cómo puedo asistirte?",
+        "¡Hola! ¿Qué tal?"
+      ]
+    },
+    {
+      "tag": "nombre",
+      "patterns": [
+        "¿Cuál es tu nombre?",
+        "¿Cómo te llamas?",
+        "Me puedes decir tu nombre?",
+        "¿Cuál es tu nombre completo?"
+      ],
+      "responses": [
+        "Me llamo ChatBotPy.",
+        "Mi nombre es ChatBotPy, ¿en qué puedo ayudarte?",
+        "Soy ChatBotPy."
+      ]
+    },
+    {
+      "tag": "creador",
+      "patterns": [
+        "¿Quién es tu creador?",
+        "¿Cómo se llama tu creador?",
+        "¿Quién te creó?",
+        "¿Quién fue el que te creó?"
+      ],
+      "responses": [
+        "Mi creador es Snow Mun.",
+        "No puedo revelar el nombre de mi creador, pero su apodo es Snow Mun."
+      ]
+    },
+    {
+      "tag": "inicio_sesion",
+      "patterns": [
+        "¿Cómo inicio sesión en la plataforma?",
+        "¿Qué debo hacer para iniciar sesión?",
+        "Proceso de inicio de sesión"
+      ],
+      "responses": [
+        "Para iniciar sesión en la plataforma, ingresa tu correo electrónico y contraseña en la página de inicio. Asegúrate de usar el correo institucional de tu universidad y la contraseña asociada a tu cuenta."
+      ]
+    },
+    {
+      "tag": "invitacion",
+      "patterns": [
+        "quiero ser administrador",
+        "quiero ser moderador",
+        "quiero ser profesor",
+        "quiero agregar a un usuario desde administración"
+      ],
+      "responses": [
+        "Para convertirte en administrador, moderador o profesor, o para agregar a alguien con uno de estos roles, un administrador general debe realizar la invitación, para esto debe ir a gestión, luego sistema abajo a la izquierda, grupos y personas y en la sección correspondiente para realizar la invitación."
+      ]
+    },
+    {
+      "tag": "profesor",
+      "patterns": [
+        "¿Qué hace el profesor?",
+        "¿Qué puede hacer el profesor?",
+        "¿Qué acciones realiza el profesor?",
+        "¿Qué secciones tiene habilitadas el profesor?"
+      ],
+      "responses": [
+        "El profesor tiene habilitada una pestaña llamada 'Gestión'. En esta pestaña, puede ver los cursos que se le han asignado y también puede evaluar los proyectos de dichos cursos."
+      ]
+    },    
+    {
+      "tag": "registro_usuario",
+      "patterns": [
+        "¿Cómo me registro en la plataforma?",
+        "¿Cómo puedo registrarme?",
+        "Me quiero registrar, ¿qué hago?",
+        "Proceso de registro"
+      ],
+      "responses": [
+        "Para registrarte en la plataforma, utiliza tu cuenta de Gmail con el correo institucional de tu universidad. Simplemente sigue los pasos indicados en la página de registro."
+      ]
+    },
+    {
+      "tag": "recuperacion_contrasena",
+      "patterns": [
+        "Olvidé mi contraseña, ¿cómo la recupero?",
+        "No recuerdo mi contraseña, ¿qué hago?",
+        "Recuperar contraseña"
+      ],
+      "responses": [
+        "Si olvidaste tu contraseña, debes contactar al área de soporte de tu universidad para recibir asistencia en la recuperación de tu cuenta."
+      ]
+    },
+    {
+      "tag": "participacion_foros",
+      "patterns": [
+        "¿Cómo puedo participar en los foros de la comunidad?",
+        "Foros de la comunidad",
+        "Participar en foros",
+        "Comentar en foros"
+      ],
+      "responses": [
+        "Puedes participar en los foros de la comunidad creando temas de conversación o aportando en los comentarios de los temas existentes. Esta es una excelente manera de interactuar y compartir conocimientos con otros miembros."
+      ]
+    },
+    {
+      "tag": "subida_proyectos",
+      "patterns": [
+        "¿Cómo puedo subir mi proyecto a la galería?",
+        "Subir proyecto a la galería",
+        "Publicar proyecto",
+        "Galería de proyectos"
+      ],
+      "responses": [
+        "Para subir tu proyecto a la galería, contáctanos a través de nuestro correo electrónico: equipo@academiamaker.cc. Nuestro equipo te solicitará toda la información necesaria para completar el proceso de publicación."
+      ]
+    },
+    {
+      "tag": "pagina_no_carga",
+      "patterns": [
+        "La página no carga correctamente, ¿qué hago?",
+        "Página no carga",
+        "Problemas al cargar la página",
+        "Página con errores"
+      ],
+      "responses": [
+        "Si la página no carga correctamente, intenta refrescar tu navegador o acceder desde otro dispositivo. Si el problema persiste, contacta a nuestro equipo de soporte técnico para recibir asistencia a soporte@academiamaker.cc."
+      ]
+    },
+    {
+      "tag": "problemas_videos",
+      "patterns": [
+        "Problemas con la reproducción de videos, ¿cómo los soluciono?",
+        "Videos no se reproducen",
+        "Problemas al ver videos",
+        "Solución para videos"
+      ],
+      "responses": [
+        "Si tienes problemas con la reproducción de videos, asegúrate de que tu navegador esté actualizado y de que tu conexión a internet sea estable. También puedes intentar usar otro navegador. Si el problema continúa, contacta a nuestro soporte técnico a soporte@academiamaker.cc."
+      ]
+    },
+    {
+      "tag": "recursos",
+      "patterns": [
+        "¿Qué tipo de recursos puedo encontrar en la sección de Recursos?",
+        "Recursos disponibles",
+        "Sección de Recursos",
+        "Qué recursos ofrece la plataforma"
+      ],
+      "responses": [
+        "En la sección de Recursos, puedes encontrar guías, instructivos, plantillas y mucho más sobre temas como innovación, emprendimiento y tecnología."
+      ]
+    },
+    {
+      "tag": "constancia",
+      "patterns": [
+        "¿Puedo obtener una constancia al completar un curso?",
+        "Constancia de curso",
+        "Recibir constancia",
+        "Certificación"
+      ],
+      "responses": [
+        "Sí, al finalizar todas las clases de un curso y completar el examen correspondiente, se generará automáticamente una Constancia del curso completado a tu nombre."
+      ]
+    },
+    {
+      "tag": "aprobar",
+      "patterns": [
+        "¿Cómo apruebo un curso?",
+        "¿Qué necesito para aprobar un curso?",
+        "¿Cuáles son los requisitos para aprobar un curso?",
+        "¿Cómo completo un curso?"
+      ],
+      "responses": [
+        "Para aprobar un curso, debes completar todas las secciones y módulos de cierre, que se habilitan después de terminar todas las clases. El curso puede incluir un examen, un proyecto o ambos. Al aprobar ambos, recibirás una constancia de curso."
+      ]
+    },
+    {
+      "tag": "tomar_un_cursos",
+      "patterns": [
+        "¿Cómo accedo a los cursos?",
+        "¿Cómo puedo ver los cursos disponibles?",
+        "¿Dónde encuentro los cursos?",
+        "¿Cómo tomar un curso?"
+      ],
+      "responses": [
+        "Para acceder a los cursos, ve a la sección 'Cursos' en la parte superior. Solo los usuarios registrados y de tipo estudiante pueden inscribirse. Haz clic en un curso para comenzar y puedes favoritarlo para fácil acceso en el futuro."
+      ]
+    }
+  ]
+}
