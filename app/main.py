@@ -8,10 +8,11 @@ import nltk
 from nltk.stem import WordNetLemmatizer
 
 app = FastAPI()
-try:
-    nltk.data.find('tokenizers/punkt')
-except LookupError:
-    nltk.download('punkt')
+nltk.data.find('tokenizers/punkt')
+nltk.download('punkt')
+nltk.download('punkt_tab')
+nltk.download('wordnet')
+
 # Configurar CORS
 origins = [
     "http://127.0.0.1:5173",  # La URL de tu frontend
