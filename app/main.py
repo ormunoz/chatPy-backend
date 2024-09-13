@@ -17,6 +17,8 @@ nltk.download('wordnet')
 origins = [
     "http://127.0.0.1:5173",  # La URL de tu frontend
     "http://localhost:5173",  # Otra URL de desarrollo común
+    "https://chat-py-pi.vercel.app",  # Otra URL de desarrollo común
+    
 ]
 
 app.add_middleware(
