@@ -1,7 +1,7 @@
 import nltk
 from nltk.stem import WordNetLemmatizer
 from unidecode import unidecode
-from models import words
+from .models import words
 import numpy as np
 
 try:

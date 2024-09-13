@@ -1,8 +1,8 @@
 import random
 import numpy as np
 from keras.models import load_model
-from models import words, classes, intents, lemmatizer
-from utils import bag_of_words
+from .models import words, classes, intents, lemmatizer
+from .utils import bag_of_words
 
 # Cargar el modelo entrenado
 try:
