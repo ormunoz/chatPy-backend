@@ -37,4 +37,3 @@ def chat(request: ChatRequest):
     response_text = ftfy.fix_text(response_text)
     
     return JSONResponse(content={"data": {"status": status_code, "chatBotText": response_text}}, status_code=status_code)
-

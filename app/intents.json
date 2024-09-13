@@ -47,7 +47,8 @@
       "patterns": [
         "¿Cómo inicio sesión en la plataforma?",
         "¿Qué debo hacer para iniciar sesión?",
-        "Proceso de inicio de sesión"
+        "Proceso de inicio de sesión",
+        "quiero ir a iniciar sesión"
       ],
       "responses": [
         "Para iniciar sesión en la plataforma, ingresa tu correo electrónico y contraseña en la página de inicio. Asegúrate de usar el correo institucional de tu universidad y la contraseña asociada a tu cuenta."
@@ -57,9 +58,14 @@
       "tag": "invitacion",
       "patterns": [
         "quiero ser administrador",
-        "quiero ser moderador",
-        "quiero ser profesor",
-        "quiero agregar a un usuario desde administración"
+        "convertirme en administrador",
+        "ser moderador",
+        "ser profesor",
+        "cómo agregar un usuario desde la administración",
+        "cómo invitar a un usuario para ser administrador",
+        "cómo invitar a un moderador",
+        "cómo añadir un profesor",
+        "necesito ser moderador"
       ],
       "responses": [
         "Para convertirte en administrador, moderador o profesor, o para agregar a alguien con uno de estos roles, un administrador general debe realizar la invitación, para esto debe ir a gestión, luego sistema abajo a la izquierda, grupos y personas y en la sección correspondiente para realizar la invitación."
@@ -187,10 +193,16 @@
     {
       "tag": "tomar_un_cursos",
       "patterns": [
+        "quiero ir a cursos",
         "¿Cómo accedo a los cursos?",
         "¿Cómo puedo ver los cursos disponibles?",
         "¿Dónde encuentro los cursos?",
-        "¿Cómo tomar un curso?"
+        "¿Cómo tomar un curso?",
+        "quiero ver los cursos",
+        "¿Cuáles son los cursos ofrecidos?",
+        "¿Cómo inscribirse en un curso?",
+        "¿Dónde están los cursos?",
+        "quiero encontrar un curso"
       ],
       "responses": [
         "Para acceder a los cursos, ve a la sección 'Cursos' en la parte superior. Solo los usuarios registrados y de tipo estudiante pueden inscribirse. Haz clic en un curso para comenzar y puedes favoritarlo para fácil acceso en el futuro."

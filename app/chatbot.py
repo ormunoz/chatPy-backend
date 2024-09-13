@@ -12,14 +12,18 @@ except Exception as e:
 
 def predict_class(sentence):
     bow = bag_of_words(sentence)
+    # probabilidades
     res = model.predict(np.array([bow]))[0]
-    results = [(i, r) for i, r in enumerate(res) if r > 0.1]  # Ajusta el umbral según sea necesario
+    if np.sum(res) != 0:
+        res = res / np.sum(res)
+    threshold = 0.1
+    results = [(i, r) for i, r in enumerate(res) if r > threshold]
     results.sort(key=lambda x: x[1], reverse=True)
     if results:
         predicted_class = classes[results[0][0]]
         return predicted_class
     else:
-        return None
+        return "No hay una intención clara."
 
 
 def get_response(tag):
