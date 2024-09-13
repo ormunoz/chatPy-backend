@@ -10,6 +10,7 @@
 4. [Dependencias](#id4)
 5. [Levantamiento](#id5)
 6. [Postman](#id6)
+7. [Entrenamiento](#id7)
 
 
 <div id='id1' />
@@ -94,13 +95,14 @@
   ```
         pip install -r requirements.txt
   ```
+Nota📝: Estas son dependencias solo para el uso de chatIa si quiere cambiar el codigo y
+  dependencias se deberan instalar en su entorno.
 
-
-<div id='id4' />
+<div id='id5' />
 
 ---
 
-## 4. Levantamiento: 📝
+## 5. Levantamiento: 📝
 
 ## Pasos para el levantamiento del proyecto:
 
@@ -116,11 +118,11 @@
 Nota📝: Esto levantará el proyecto en http://localhost:3000.
 
 
-<div id='id5' />
+<div id='id6' />
 
 ---
 
-## 5. Postman: 📝
+## 6. Postman: 📝
 
 ## Probar el endpoint del chat usando Postman:
 
@@ -136,3 +138,102 @@ Nota📝: Esto levantará el proyecto en http://localhost:3000.
 
 Nota📝: El chatbot responderá según su capacidad de procesamiento neuronal (basado en el modelo que hayas implementado).
 
+<div id='id7' />
+
+---
+
+## 7. Entrenamiento: 📝
+
+## Paso a Paso para Entrenar un Chatbot de IA:
+
+✳️ Crear el Archivo intents.json: Este archivo es crucial para el entrenamiento de tu chatbot. En él, defines las diferentes intenciones que tu chatbot debe reconocer y las respuestas que debe proporcionar. Cada intención contiene:
+
+
+- **`Tag (Etiqueta):`**: Un identificador único para la intención.
+- **`Patterns (Patrones):`**: Ejemplos de frases o textos que los usuarios podrían escribir para expresar esa intención.
+- **`Responses (Respuestas):`**: Las respuestas que el chatbot puede dar cuando detecta esa intención.
+A continuación, se muestra un ejemplo de cómo podría verse una sección de tu archivo intents.json:
+
+  ```
+        {
+          {
+            "intents": [
+              {
+                "tag": "saludo",
+                "patterns": [
+                  "Hola",
+                  "¿Qué tal?",
+                  "Buenos días",
+                  "Hola, ¿cómo estás?",
+                  "Hey"
+                ],
+                "responses": [
+                  "¡Hola! ¿En qué puedo ayudarte hoy?",
+                  "¡Buenos días! ¿Cómo puedo asistirte?",
+                  "¡Hola! ¿Qué tal?"
+                ]
+              }
+            ]
+          }
+        }
+  ```
+
+
+✳️ Definir las Intenciones y Patrones:
+
+➡️ Para cada intención (tag), debes definir diferentes patrones que representen las maneras en las que un usuario podría expresar esa intención. Por ejemplo, para la intención "saludo", los patrones pueden incluir variaciones como "Hola", "¿Qué tal?", "Buenos días", etc.
+
+Nota📝: Asegúrate de cubrir varias formas en las que las personas pueden formular preguntas o solicitudes para cada intención. Cuantos más patrones tengas, más preciso será tu chatbot para identificar la intención del usuario.
+
+
+✳️ Definir las Respuestas:
+
+➡️ Para cada intención, debes proporcionar una lista de respuestas que el chatbot puede usar cuando detecta esa intención.
+Estas respuestas deben ser variadas para que el chatbot no suene repetitivo. Por ejemplo, en el caso de la intención "saludo", puedes incluir respuestas como "¡Hola! ¿En qué puedo ayudarte hoy?", "¡Buenos días! ¿Cómo puedo asistirte?", etc.
+
+Nota📝: Agregar Más Intenciones al Archivo intents.json: Puedes añadir tantas intenciones como desees. Aquí tienes algunos ejemplos adicionales:
+
+  ```
+        {
+          "intents": [
+            {
+              "tag": "despedida",
+              "patterns": [
+                "Adiós",
+                "Hasta luego",
+                "Nos vemos",
+                "Chao",
+                "Que tengas un buen día"
+              ],
+              "responses": [
+                "¡Adiós! Que tengas un buen día.",
+                "Hasta luego. ¡Cuídate!",
+                "Nos vemos pronto."
+              ]
+            },
+            {
+              "tag": "gracias",
+              "patterns": [
+                "Gracias",
+                "Muchas gracias",
+                "Te lo agradezco",
+                "¡Gracias!"
+              ],
+              "responses": [
+                "¡De nada! Estoy aquí para ayudar.",
+                "No hay de qué. ¡Siempre dispuesto a ayudar!",
+                "¡Gracias a ti!"
+              ]
+            }
+          ]
+        }
+  ```
+
+✳️ Ejecución del Entrenamiento:
+
+➡️ Para entrenar el chatbot utilizando las intenciones definidas, solo necesitas ejecutar el archivo de entrenamiento desde la raíz del proyecto o desde el entorno virtual que hayas creado.
+  ```
+      python training.py 
+  ```
+
+➡️ Esto iniciará el proceso de entrenamiento del chatbot basado en los datos que has configurado en el archivo intents.json. Una vez finalizado, el modelo estará listo para reconocer las intenciones y proporcionar las respuestas correspondientes.
