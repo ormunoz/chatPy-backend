@@ -1,12 +1,17 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
 from fastapi.middleware.cors import CORSMiddleware
-from .chatbot import predict_class, get_response
+from chatbot import predict_class, get_response
 from fastapi.responses import JSONResponse
 import ftfy
+import nltk
+from nltk.stem import WordNetLemmatizer
 
 app = FastAPI()
-
+try:
+    nltk.data.find('tokenizers/punkt')
+except LookupError:
+    nltk.download('punkt')
 # Configurar CORS
 origins = [
     "http://127.0.0.1:5173",  # La URL de tu frontend

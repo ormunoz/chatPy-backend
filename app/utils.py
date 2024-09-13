@@ -1,9 +1,14 @@
 import nltk
 from nltk.stem import WordNetLemmatizer
 from unidecode import unidecode
-from .models import words
+from models import words
 import numpy as np
 
+try:
+    nltk.data.find('tokenizers/punkt')
+except LookupError:
+    nltk.download('punkt')
+    
 lemmatizer = WordNetLemmatizer()
 
 #  limpiar y normalizar la oración
